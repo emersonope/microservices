@@ -1,6 +1,6 @@
 spring:
   application:
-    name: CUSTOMER-ANALYTICSDOIS
+    name: CUSTOMER-ANALYTICS
 #  datasource:
 #    url: jdbc:postgresql://localhost:5432/postgres
 #    username: postgres

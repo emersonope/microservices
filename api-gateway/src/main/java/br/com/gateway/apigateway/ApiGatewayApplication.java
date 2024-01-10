@@ -19,7 +19,11 @@ public class ApiGatewayApplication {
 				.route(p -> p
 						.path("/api/users/**")
 						.filters(f -> f.stripPrefix(2))
-						.uri("lb://USER-SERVICE")) // Assuming "user-service" is the registered service name in Eureka
+						.uri("lb://USER-SERVICE"))
+				.route(p -> p
+						.path("/api/customeranalytics/**")
+						.filters(f -> f.stripPrefix(2))
+						.uri("lb://CUSTOMER-ANALYTICSDOIS"))
 				.build();
 	}
 }
